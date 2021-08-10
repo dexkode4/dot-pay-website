@@ -2,8 +2,8 @@
   max-width: 1300px;
   width: 100%;
   margin: auto;
-  padding-left: 10em !important;
-  padding-right: 10em !important;
+  padding-left: 8em !important;
+  padding-right: 8em !important;
 
   @media (max-width: 770px) {
     padding-left: 2em !important;
@@ -42,5 +42,19 @@
     background: transparent;
     border: 1px solid #055445;
     color: #055445;
+  }
+}
+
+.text {
+    font-size: 4rem;
+    font-weight: 500;
+  &--green {
+    color: #055445;
+    
+  }
+  &--orange {
+    color: #F2994A;
+    font-size: 2rem;
+    font-weight: 500;
   }
 }
