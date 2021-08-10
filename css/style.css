@@ -57,10 +57,7 @@ body {
   }
 }
 
-.btn__primary {
-  border: none;
-  background-color: #055445;
-  color: #fff;
+.btn {
   display: flex;
   width: max-content;
   white-space: nowrap;
@@ -68,20 +65,30 @@ body {
   border: none;
   height: 50px;
   border-radius: 4px;
-  padding: 1.8em 1.5em;
+  padding: 1.3em 1.5em;
   font-weight: 500;
   font-size: 1.7rem;
   height: 5rem;
   cursor: pointer;
   font-family: "Galano";
 }
-.btn__primary:hover {
+.btn:hover {
   transition: all 0.2s ease;
   background-color: #427b70;
 }
-.btn__primary svg,
-.btn__primary img {
+.btn svg,
+.btn img {
   margin-left: 5rem;
+}
+.btn__primary {
+  border: none;
+  background-color: #055445;
+  color: #fff;
+}
+.btn__outline {
+  background: transparent;
+  border: 1px solid #055445;
+  color: #055445;
 }
 
 .text {
@@ -331,6 +338,93 @@ body {
   font-size: 2rem;
   color: #000000;
   margin-bottom: 2rem;
+}
+
+.careers {
+  background: url("/assets/images/large-bg.svg") no-repeat center;
+  background-size: 100%;
+}
+.careers .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.careers .container h3 {
+  color: #d67a20;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.careers .container h1 {
+  font-size: 3.5rem;
+  color: #055445;
+  font-weight: 500;
+  padding: 10px 0;
+}
+.careers .container p {
+  font-weight: 500;
+}
+.careers .container button {
+  margin: 20px auto;
+}
+@media (min-width: 770px) {
+  .careers {
+    background-size: 100% 200%;
+  }
+  .careers .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@font-face {
+  font-family: "Galano";
+  src: url("../assets/fonts/GalanoGrotesqueAltLight.otf") format("opentype");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Galano";
+  src: url("../assets/fonts/GalanoGrotesqueAltRegular.otf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Galano";
+  src: url("../assets/fonts/GalanoGrotesqueAltMedium.otf") format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Galano";
+  src: url("../assets/fonts/GalanoGrotesqueAltSemiBold.otf") format("opentype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Galano";
+  src: url("../assets/fonts/GalanoGrotesqueBold.otf") format("opentype");
+  font-weight: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  margin: auto;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Galano";
+}
+
+body {
+  font-family: "Galano";
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2rem;
 }
 
 .BecomeAnAgent {
