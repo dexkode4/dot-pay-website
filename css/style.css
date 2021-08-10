@@ -28,12 +28,14 @@
   font-size: 1.7rem;
   height: 5rem;
   cursor: pointer;
+  font-family: "Galano";
 }
 .btn__primary:hover {
   transition: all 0.2s ease;
   background-color: #427b70;
 }
-.btn__primary svg, .btn__primary img {
+.btn__primary svg,
+.btn__primary img {
   margin-left: 5rem;
 }
 
@@ -124,6 +126,112 @@
   display: none;
 }
 
+.footer {
+  background: linear-gradient(0deg, #e4ffe1 -11.52%, rgba(228, 255, 225, 0) 111.02%), #fbfbfb;
+  padding: 100px 0;
+  width: 100%;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+}
+.footer .container .footer-cta {
+  flex: 1;
+}
+.footer .container .footer--links {
+  flex: 3;
+}
+.footer-cta {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.footer-cta p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.footer--links {
+  display: flex;
+  margin-top: 20px;
+}
+.footer--links-caption {
+  display: none;
+}
+.footer--links-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer--links-items p {
+  font-size: 1.5rem;
+}
+.footer--links-items div.col {
+  flex-direction: column;
+}
+.footer--links-items div.flex-1 {
+  width: 100%;
+}
+.footer--links-items div {
+  width: 50%;
+}
+.footer--links-items div h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #055445;
+  margin-bottom: 12px;
+}
+.footer--links-items div ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.footer--links-items div ul li {
+  margin-bottom: 12px;
+}
+.footer--links-items div ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  .footer .container {
+    flex-direction: row;
+  }
+  .footer-cta {
+    margin-right: 83px;
+  }
+  .footer--links {
+    margin-top: 0;
+  }
+  .footer--links-caption {
+    display: block;
+  }
+  .footer--links-caption .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer--links-caption .container hr {
+    width: 70%;
+    height: 0.5px;
+    background: none;
+    border: none;
+    border-bottom: 0.05rem solid #000;
+  }
+  .footer--links-items {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer--links-items div,
+.footer--links-items div.flex-1 {
+    width: 30%;
+  }
+  .footer--links-items .col div {
+    width: 100%;
+  }
+}
+
 .hero {
   background: #e4ffe1;
   height: 70vh;
@@ -209,6 +317,12 @@ html {
 
 body {
   font-family: "Galano";
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

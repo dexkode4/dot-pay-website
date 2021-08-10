@@ -11,31 +11,31 @@
   }
 }
 
-
 .btn {
-    &__primary{
-        border: none;
-        background-color: #055445;
-        color: #fff;
-        display: flex;
-        width: max-content;
-        white-space: nowrap;
-        align-items: center;
-        border: none;
-        height: 50px;
-        border-radius: 4px;
-        padding: 1.8em 1.5em;
-        font-weight: 500;
-        font-size: 1.7rem;
-        height: 5rem;
-        cursor: pointer;
-        &:hover{
-            transition: all 0.2s ease;
-            background-color: #427b70;
-  
-        }
-        svg , img{
-            margin-left: 5rem;
-        }
+  &__primary {
+    border: none;
+    background-color: #055445;
+    color: #fff;
+    display: flex;
+    width: max-content;
+    white-space: nowrap;
+    align-items: center;
+    border: none;
+    height: 50px;
+    border-radius: 4px;
+    padding: 1.8em 1.5em;
+    font-weight: 500;
+    font-size: 1.7rem;
+    height: 5rem;
+    cursor: pointer;
+    font-family: "Galano";
+    &:hover {
+      transition: all 0.2s ease;
+      background-color: #427b70;
     }
+    svg,
+    img {
+      margin-left: 5rem;
+    }
+  }
 }
