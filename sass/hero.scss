@@ -1,4 +1,43 @@
 .hero {
     background: #e4ffe1;
     height: 70vh;
+    position: relative;
+    width: 100%;
+    background-image: url(../assets/images/line.svg);
+    background-position: center;
+    background-size: 100% 1000px;
+    background-repeat: no-repeat ;
+    display: flex;
+    justify-content: center;
+    &-content{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 100%;
+            max-width: 410px;
+
+            @media (max-width: 770px) {
+                display: none;
+            }
+        }
+
+        &__right {
+            font-family: 'Galano';
+            h1{
+                font-size: 4rem;
+                font-weight: 500;
+                color: #055445;
+                margin-bottom: 2rem;
+            }
+
+            p{
+                font-size: 2rem;
+                color: #000000;
+                margin-bottom: 2rem;
+            }
+
+        }
+    }
 }

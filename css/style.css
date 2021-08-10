@@ -12,6 +12,31 @@
   }
 }
 
+.btn__primary {
+  border: none;
+  background-color: #055445;
+  color: #fff;
+  display: flex;
+  width: max-content;
+  white-space: nowrap;
+  align-items: center;
+  border: none;
+  height: 50px;
+  border-radius: 4px;
+  padding: 1.8em 1.5em;
+  font-weight: 500;
+  font-size: 1.7rem;
+  height: 5rem;
+  cursor: pointer;
+}
+.btn__primary:hover {
+  transition: all 0.2s ease;
+  background-color: #427b70;
+}
+.btn__primary svg, .btn__primary img {
+  margin-left: 5rem;
+}
+
 .header {
   background: #e4ffe1;
 }
@@ -71,6 +96,7 @@
   right: 0;
   background: #0000001f;
   display: none;
+  z-index: 100;
 }
 .nav-mobile-menu {
   position: absolute;
@@ -101,6 +127,43 @@
 .hero {
   background: #e4ffe1;
   height: 70vh;
+  position: relative;
+  width: 100%;
+  background-image: url(../assets/images/line.svg);
+  background-position: center;
+  background-size: 100% 1000px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+.hero-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.hero-content img {
+  width: 100%;
+  max-width: 410px;
+}
+@media (max-width: 770px) {
+  .hero-content img {
+    display: none;
+  }
+}
+.hero-content__right {
+  font-family: "Galano";
+}
+.hero-content__right h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  color: #055445;
+  margin-bottom: 2rem;
+}
+.hero-content__right p {
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 2rem;
 }
 
 @font-face {
@@ -141,6 +204,10 @@
 
 html {
   font-size: 62.5%;
+  font-family: "Galano";
+}
+
+body {
   font-family: "Galano";
 }
 
