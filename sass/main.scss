@@ -1,36 +1,35 @@
-
 @import "./utility";
 @import "./navbar";
 @import "./footer";
 @import "./hero";
 
 @font-face {
-  font-family: 'Galano';
-  src: url('../assets/fonts/GalanoGrotesqueAltLight.otf') format('opentype');
+  font-family: "Galano";
+  src: url("../assets/fonts/GalanoGrotesqueAltLight.otf") format("opentype");
   font-weight: 200;
 }
 
 @font-face {
-  font-family: 'Galano';
-  src: url('../assets/fonts/GalanoGrotesqueAltRegular.otf') format('opentype');
+  font-family: "Galano";
+  src: url("../assets/fonts/GalanoGrotesqueAltRegular.otf") format("opentype");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Galano';
-  src: url('../assets/fonts/GalanoGrotesqueAltMedium.otf') format('opentype');
+  font-family: "Galano";
+  src: url("../assets/fonts/GalanoGrotesqueAltMedium.otf") format("opentype");
   font-weight: 500;
 }
 
 @font-face {
-  font-family: 'Galano';
-  src: url('../assets/fonts/GalanoGrotesqueAltSemiBold.otf') format('opentype');
+  font-family: "Galano";
+  src: url("../assets/fonts/GalanoGrotesqueAltSemiBold.otf") format("opentype");
   font-weight: 600;
 }
 
 @font-face {
-  font-family: 'Galano';
-  src: url('../assets/fonts/GalanoGrotesqueBold.otf') format('opentype');
+  font-family: "Galano";
+  src: url("../assets/fonts/GalanoGrotesqueBold.otf") format("opentype");
   font-weight: 700;
 }
 * {
@@ -45,11 +44,15 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'Galano';
+  font-family: "Galano";
 }
 
 body {
-  font-family: 'Galano';
+  font-family: "Galano";
 }
 
-
+p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
