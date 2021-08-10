@@ -155,10 +155,10 @@ body {
   right: 0;
   background: #0000001f;
   display: none;
-  z-index: 100;
+  z-index: 999;
 }
 .nav-mobile-menu {
-  position: absolute;
+  position: fixed;
   background-color: #fff;
   top: 0;
   bottom: 0;
@@ -243,6 +243,11 @@ body {
 }
 .BecomeAnAgent-right {
   position: relative;
+  z-index: 1;
+}
+.BecomeAnAgent-left {
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 770px) {
   .BecomeAnAgent-left {

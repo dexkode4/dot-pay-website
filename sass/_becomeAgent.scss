@@ -13,8 +13,11 @@
   }
   &-right {
     position: relative;
+    z-index: 1;
   }
   &-left {
+    position: relative;
+    z-index: 1;
     @media (max-width: 770px) {
         margin-bottom: 8rem;
       }

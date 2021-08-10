@@ -60,11 +60,11 @@
         right: 0;
         background: #0000001f;
         display: none;
-        z-index: 100;
+        z-index: 999;
     }
 
     &-menu {
-      position: absolute;
+      position: fixed;
       background-color: #fff;
       top: 0;
       bottom: 0;
