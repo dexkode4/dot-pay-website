@@ -376,6 +376,59 @@ body {
   }
 }
 
+.contact-section {
+  background: linear-gradient(0deg, #e4ffe1 -11.52%, rgba(228, 255, 225, 0) 111.02%), #fbfbfb;
+  padding: 50px 0;
+}
+.contact-section .container {
+  display: flex;
+  flex-direction: column;
+}
+.contact-section .container .contact-info {
+  margin-bottom: 20px;
+}
+.contact-section .container .contact-info h3 {
+  color: #055445;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.contact-section .container .contact-info article {
+  display: flex;
+  align-items: center;
+}
+.contact-section .container .contact-info article img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+.contact-section .container .contact-info article p {
+  font-size: 2rem;
+}
+.contact-section .container .contact-info article p a {
+  color: #000;
+  text-decoration: none;
+}
+@media (min-width: 770px) {
+  .contact-section .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contact-section .container button {
+    align-self: flex-end;
+  }
+  .contact-section .container .contact-info {
+    margin-bottom: 0;
+  }
+  .contact-section .container .contact-info article img {
+    width: 50px;
+    height: 50px;
+  }
+  .contact-section .container .contact-info article p {
+    font-size: 3rem;
+  }
+}
+
 @font-face {
   font-family: "Galano";
   src: url("../assets/fonts/GalanoGrotesqueAltLight.otf") format("opentype");
