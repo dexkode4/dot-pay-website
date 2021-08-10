@@ -7,8 +7,8 @@
 }
 @media (max-width: 770px) {
   .container {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 2em !important;
+    padding-right: 2em !important;
   }
 }
 
