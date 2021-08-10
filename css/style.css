@@ -199,6 +199,17 @@ body {
 }
 .footer .container .footer--links {
   flex: 3;
+  flex-direction: column;
+}
+.footer .container .footer--links-caption div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .container .footer--links-caption div hr {
+  width: 75%;
+  height: 1px;
+  background-color: rgba(5, 84, 69, 0.3);
 }
 .footer-cta {
   display: flex;
@@ -276,7 +287,6 @@ body {
     height: 0.5px;
     background: none;
     border: none;
-    border-bottom: 0.05rem solid #000;
   }
   .footer--links-items {
     justify-content: space-between;
