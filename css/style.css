@@ -1,0 +1,142 @@
+.header {
+  background: #e4ffe1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e4ffe1;
+  padding: 5rem 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #252122;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: 3rem;
+}
+.nav-link--mobile {
+  margin-left: 0;
+  margin-bottom: 6rem;
+}
+.nav-link:hover {
+  color: #808080;
+}
+.nav-link:active {
+  color: #055445;
+}
+@media (max-width: 770px) {
+  .nav-desktop {
+    display: none;
+  }
+}
+.nav-mobile {
+  display: none;
+}
+@media (max-width: 770px) {
+  .nav-mobile {
+    display: block;
+  }
+}
+.nav-mobile-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.nav-mobile-header .nav-toggle {
+  justify-self: flex-end;
+}
+.nav-mobile-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #0000001f;
+  display: none;
+}
+.nav-mobile-menu {
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  min-width: 320px;
+  left: -100%;
+  z-index: 1000;
+  transition: all 0.5s ease;
+  padding: 2em;
+}
+.nav-mobile-menu .menus {
+  display: flex;
+  flex-direction: column;
+}
+.nav-toggle:checked ~ .nav-mobile-menu {
+  left: 0;
+}
+.nav-toggle:checked ~ .nav-mobile-menu ~ .nav-mobile-overlay {
+  display: block;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+@media (max-width: 770px) {
+  .container {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+@font-face {
+  font-family: "Galano";
+  src: url("../assets/fonts/GalanoGrotesqueAltLight.otf") format("opentype");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Galano";
+  src: url("../assets/fonts/GalanoGrotesqueAltRegular.otf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Galano";
+  src: url("../assets/fonts/GalanoGrotesqueAltMedium.otf") format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Galano";
+  src: url("../assets/fonts/GalanoGrotesqueAltSemiBold.otf") format("opentype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Galano";
+  src: url("../assets/fonts/GalanoGrotesqueBold.otf") format("opentype");
+  font-weight: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  margin: auto;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Galano";
+}
+
+/*# sourceMappingURL=style.css.map */

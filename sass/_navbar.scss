@@ -1,0 +1,92 @@
+.header {
+  background: #e4ffe1;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e4ffe1;
+  padding: 5rem 0;
+}
+
+.nav {
+  &-link {
+    text-decoration: none;
+    color: #252122;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 3rem;
+
+    &--mobile {
+        margin-left: 0;
+        margin-bottom: 6rem;
+    }
+
+    &:hover {
+      color: #808080;
+    }
+    &:active {
+      color: #055445;
+    }
+  }
+
+  &-desktop {
+    @media (max-width: 770px) {
+      display: none;
+    }
+  }
+
+  &-mobile {
+    display: none;
+    @media (max-width: 770px) {
+      display: block;
+    }
+
+    &-header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+        & .nav-toggle {
+            justify-self: flex-end;
+        }
+    }
+
+    &-overlay{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #0000001f;
+        display: none;
+    }
+
+    &-menu {
+      position: absolute;
+      background-color: #fff;
+      top: 0;
+      bottom: 0;
+      min-width: 320px;
+      left: -100%;
+      z-index: 1000;
+      transition: all .5s ease;
+      padding: 2em;
+      
+      .menus {
+          display: flex;
+          flex-direction: column;
+      }
+    }
+  }
+  &-toggle:checked ~ .nav-mobile-menu {
+    left: 0;
+  }
+  &-toggle:checked ~ .nav-mobile-menu ~ .nav-mobile-overlay {
+    display: block;
+  }
+}
+
+#nav-toggle {
+  display: none;
+}

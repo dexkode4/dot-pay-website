@@ -1,0 +1,12 @@
+{
+  "name": "dotpayhtml",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "dependencies": {
+    "sass": "^1.37.5"
+  }
+}
